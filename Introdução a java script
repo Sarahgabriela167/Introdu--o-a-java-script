@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucessor e Antecessor</title>
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Sucessor e Antecessor</title>
+</head>
+<body>
+  <h2>Descubra o antecessor e o sucessor</h2>
+  <input type="number" id="numero" placeholder="Digite um número">
+  <button onclick="mostrarNumeros()">Mostrar</button>
+  <p id="resultado"></p>
+
+  <script>
+    function mostrarNumeros() {
+      const numero = parseInt(document.getElementById("numero").value);
+      const antecessor = numero - 1;
+      const sucessor = numero + 1;
+
+      document.getElementById("resultado").innerText = 
+        `Antecessor: ${antecessor}, Número: ${numero}, Sucessor: ${sucessor}`;
+    }
+  </script>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Divisão da Conta</title>
+</head>
+<body>
+  <h2>Divida a conta igualmente</h2>
+  <input type="number" id="clientes" placeholder="Número de clientes">
+  <input type="number" id="total" placeholder="Valor total da conta (R$)" step="0.01">
+  <button onclick="dividirConta()">Calcular</button>
+  <p id="resultadoConta"></p
+<script>
+    function dividirConta() {
+      const clientes = parseInt(document.getElementById("clientes").value);
+      const total = parseFloat(document.getElementById("total").value);}
+      
+      if (clientes 0 && total = 0) {
+        const valorPorPessoa = total / clientes;
+        document.getElementById("resultadoConta").innerText = 
+          `Cada cliente deve pagar: R$ ${valorPorPessoa.toFixed(2)}`;
+      } else {
+        document.getElementById("resultadoConta").innerText = 
+          "Por favor, insira valores válidos.";
+      }
+    
+  </script>
+
+
+
+</body>
+</html>
